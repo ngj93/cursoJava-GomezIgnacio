@@ -12,13 +12,13 @@ const numeroingresado = "0"
 const dolar = "1"
 let resultado = "0";
 let valor = "0";
-let nuevaOperacion: false; 
-let operacion:"";
+let nuevaOperacion = false; 
+let operacion = "";
 
 
 
-function calcular(valormoneda){
-    let resultado = valor/valormoneda
+function cambiarMoneda (valormoneda) {
+    let resultado = valor / valormoneda
     return mostrarResultado
 
 }
