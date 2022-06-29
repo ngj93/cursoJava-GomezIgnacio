@@ -47,6 +47,12 @@ do{
 
 moneda()
 
+
+
+let criptos = ["Bitcoin", "Ethereum", "Tether", "USDCoin", "BNB", "BinanceUSD"]
+
+console.log(criptos.length)
+
  
 
 
