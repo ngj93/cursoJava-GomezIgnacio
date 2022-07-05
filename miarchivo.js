@@ -29,18 +29,18 @@ do {
     switch (moneda) {
         case '1':
                 resultado = comprarCrypto(Bitcoin.precio);
-                alert('compraste ${resultado} btc');
+                alert(`compraste ${resultado} btc`);
                 break;
         case '2':
                 resultado = comprarCrypto(Ethereum.precio);
-                alert('compraste ${resultado} eth');
+                alert(`compraste ${resultado} eth`);
                 break;
         case '3':
                 resultado = comprarCrypto(Tether.precio);
-                alert('compraste ${resultado} tether');
+                alert(`compraste ${resultado} tether`);
                 break;
         default:
-                alert('error de ingreso');
+                alert(`error de ingreso`);
                 valor = 0;
                 moneda = '';
                 break;
