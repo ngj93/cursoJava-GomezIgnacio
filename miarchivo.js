@@ -1,6 +1,6 @@
-const Bitcoin = { nombre: "Bitcoin", precio: 20.506,59 } 
-const Ethereum = { nombre: "Ethereum", precio: 1106,22 }
-const Tether = { nombre: "Tether", precio: 0,998987 }
+const Bitcoin = { nombre: "Bitcoin", precio: 20506.59 } 
+const Ethereum = { nombre: "Ethereum", precio: 1106.22 }
+const Tether = { nombre: "Tether", precio: 0.998987 }
 let nuevaCompra = 'false';
 
 let compra = '';
@@ -28,15 +28,15 @@ do {
     );
     switch (moneda) {
         case '1':
-                resultado = comprarCrypto(Bitcoin);
+                resultado = comprarCrypto(Bitcoin.precio);
                 alert('compraste ${resultado} btc');
                 break;
         case '2':
-                resultado = comprarCrypto(Ethereum);
+                resultado = comprarCrypto(Ethereum.precio);
                 alert('compraste ${resultado} eth');
                 break;
         case '3':
-                resultado = comprarCrypto(Tether);
+                resultado = comprarCrypto(Tether.precio);
                 alert('compraste ${resultado} tether');
                 break;
         default:
@@ -44,6 +44,7 @@ do {
                 valor = 0;
                 moneda = '';
                 break;
+                50;
     }
         nuevaCompra = confirm('Quieres realizar otra operacion?');
 }while (nuevaCompra);
