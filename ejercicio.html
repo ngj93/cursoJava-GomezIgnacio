@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="conversor">
+      <h1>Conversor de Monedas</h1>
+
+      <div class="valores">
+        <div class="seletorMoneda">
+          <select name="monedasde" id="monedasde">
+            <option value="de">Converter de</option>
+            <option value="USD">Dolar</option>
+            <option value="EUR">Euro</option>
+          </select>
+
+          <select name="monedaspara" id="monedaspara">
+            <option value="para">para</option>
+            <option value="USD">Dolar</option>
+            <option value="EUR">Euro</option>
+          </select>
+        </div>
+        <label for="converter">
+          <input type="number" id="converter" />
+        </label>
+        <div id="resultado">
+          <div id="value">VALOR: <span id="conversion"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <button id="boton">Convertir</button>
+    <script src="main.js"></script>
+  </body>
+</html>
