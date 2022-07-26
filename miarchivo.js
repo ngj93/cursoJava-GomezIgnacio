@@ -13,8 +13,8 @@ function comprarCrypto (valormoneda) {
 }
 
 do {
-    compra = Number(prompt('cuanto quiere cambiar'));
-    moneda = prompt(
+    compra = Number(Swal.fire('cuanto quiere cambiar'));
+    moneda = Swal.fire(
         ` Que moneda quiere comprar? 
           1. Bitcoin
           2. Ethereum
@@ -29,6 +29,7 @@ do {
     switch (moneda) {
         case '1':
                 resultado = comprarCrypto(Bitcoin.precio);
+
                 alert(`compraste ${resultado} btc`);
                 break;
         case '2':

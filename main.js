@@ -5,7 +5,7 @@ let para = document.querySelector("#monedaspara");
 
 
 let boton = document.getElementById("boton")
-boton.addEventListener("click", convertir ())
+boton.addEventListener("click", convertir)
 
 
 function convertir() {

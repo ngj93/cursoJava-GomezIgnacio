@@ -1,6 +1,6 @@
 let tema = document.querySelector("#tema")
 
-boton.addEventlistener("click", function(){
+tema.addEventListener("click", function(){
     if (localStorage.getItem("theme") == "dark"){
         lightMode()
     }else{
